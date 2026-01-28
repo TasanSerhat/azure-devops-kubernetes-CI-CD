@@ -1,0 +1,14 @@
+trigger:
+- master
+
+pool:
+  name: MyLocalPool
+
+steps:
+- script: |
+    docker build -t my-devops-image:v1 .
+  displayName: 'Docker Build'
+
+- script: |
+    kubectl apply -f deployment.yaml
+  displayName: 'Deploy to Kubernetes'
