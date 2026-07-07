@@ -68,8 +68,6 @@ pool:
 
 The pipeline runs successfully upon every push to the repository, automating the Build and Deploy stages.
 
-*(Please ensure you have added the screenshot to the `screenshots/` folder)*
-
 ### Kubernetes Deployment Status
 
 The application is successfully deployed to the Kubernetes cluster and pods are in `Running` state.
